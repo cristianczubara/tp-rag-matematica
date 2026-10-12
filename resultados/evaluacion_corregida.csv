@@ -1,0 +1,511 @@
+id;tipo;pregunta;rank_evidencia;fuentes_top3;sin_rag;con_rag;referencia;nota_sin_rag;nota_con_rag;alucina_sin_rag;alucina_con_rag;cita_fuente
+P1;específica;¿Qué propiedad cumple la recta tangente a una circunferencia respecto del radio en el punto de tangencia?;9.0;"T08. Plano cartesiano.pdf p.45; T08. Plano cartesiano.pdf p.47; T08. Plano cartesiano.pdf p.49";"La recta tangente a una circunferencia en el punto de tangencia es **perpendicular** al radio en ese punto.
+
+**Explicación:**
+
+* **Circunferencia:** Es la figura geométrica formada por todos los puntos que están a la misma distancia de un punto fijo llamado centro.
+* **Radio:** Es la distancia desde el centro de la circunferencia hasta cualquier punto de la circunferencia.
+* **Tangente:** Es una línea recta que toca la circunferencia en un solo punto (el punto de tangencia) y no la corta.
+
+En el punto de tangencia, la recta tangente forma un ángulo de 90 grados (un ángulo recto) con el radio.  Esto es una propiedad fundamental de la geometría y se basa en la definición de tangente y radio.
+
+**En resumen:**  La recta tangente es perpendicular al radio en el punto de tangencia.";La recta tangente a una circunferencia es perpendicular al radio en el punto de tangencia.;"La recta que pasa por el punto de tangencia y el centro es perpendicular a la tangente; por eso la pendiente de la tangente es −1/m, siendo m la pendiente del radio (Plano cartesiano, sección 7).";6;10;No;No;10
+P2;específica;¿Qué son las condiciones iniciales y cuándo hay que explicitarlas?;3.0;"T01. Lógica Proposicional.pdf p.11; T01. Lógica Proposicional.pdf p.7; T03. Números reales.pdf p.19";"Las condiciones iniciales son un concepto fundamental en diversos campos, especialmente en:
+
+* **Matemáticas:** Se refieren a los valores de una función o ecuación en un punto específico (o en un conjunto de puntos) al inicio de un proceso.  Piensa en una función como una montaña rusa: las condiciones iniciales son la altura y velocidad de la montaña rusa en el punto de inicio.
+* **Física:**  En la resolución de ecuaciones diferenciales, las condiciones iniciales especifican el estado del sistema físico (posición, velocidad, etc.) en un momento particular.  Por ejemplo, si estás modelando el movimiento de un objeto, necesitas saber su posición y velocidad al principio.
+* **Ingeniería:**  En el diseño y análisis de sistemas, las condiciones iniciales definen el estado inicial del sistema, lo que es crucial para predecir su comportamiento futuro.
+* **Economía y Finanzas:**  En modelos económicos, las condiciones iniciales pueden representar el nivel de ingresos, la inflación, el desempleo, etc., al comienzo de un período.
+
+**¿Cuándo hay que explicitarlas?**
+
+La necesidad de explicitar las condiciones iniciales depende del problema que estés resolviendo:
+
+1. **Ecuaciones Diferenciales:**  **Siempre** son necesarias. Las ecuaciones diferenciales describen cómo una función cambia con el tiempo o con respecto a otra variable.  Sin condiciones iniciales, la ecuación diferencial tiene infinitas soluciones posibles. Las condiciones iniciales actúan como ""anclas"" que restringen el espacio de soluciones y permiten encontrar la solución *única* que satisface la ecuación en un punto específico.  Por ejemplo:
+
+   *  `dy/dx = f(x, y)`  con condiciones iniciales `y(x₀) = y₀` (valor de y en x₀) y `dy/dx(x₀) = y₀'` (derivada de y en x₀).
+
+2. **Modelos Matemáticos en General:**  Cuando se construye un modelo matemático para representar un sistema, las condiciones iniciales son esenciales para:
+   * **Simulaciones:**  Para que una simulación sea realista, necesitas saber dónde estaba el sistema al principio.
+   * **Análisis de Sensibilidad:**  Para entender cómo las condiciones iniciales afectan la solución final.
+   * **Validación del Modelo:**  Para comparar la salida del modelo con datos reales y verificar su precisión.
+
+3. **Problemas de Optimización:**  En problemas de optimización, las condiciones iniciales pueden ser los valores iniciales de las variables de decisión que se están optimizando.
+
+4. **Problemas de Programación Lineal/No Lineal:**  Las condiciones iniciales pueden ser los valores iniciales de las variables de la función objetivo y las restricciones.
+
+**En resumen:**
+
+* **Si estás resolviendo una ecuación diferencial, las condiciones iniciales son *obligatorias*.**
+* **Si estás construyendo un modelo matemático, las condiciones iniciales son *cruciales* para obtener una solución significativa y útil.**
+* **Si estás simulando un sistema, las condiciones iniciales son *esenciales* para la simulación.**
+
+**Ejemplo sencillo (Ecuación Diferencial):**
+
+Considera la ecuación diferencial: `dy/dx = y` con la condición inicial `y(0) = 1`.  Esta ecuación describe una función que crece exponencialmente.  La condición inicial `y(0) = 1` nos dice que la función comienza en el valor 1 en el punto x=0.  Con esta condición, podemos encontrar la solución general de la ecuación: `y(x) = e^x`.
+
+Espero que esta explicación sea clara.  Si tienes alguna otra pregunta, no dudes en preguntar.";"Según los documentos proporcionados, las condiciones iniciales son las premisas o datos que se necesitan para resolver un problema o analizar una situación. En el contexto de los ejemplos, se mencionan:
+
+*   **En la ecuación canónica de una circunferencia:** Se necesitan encontrar puntos que pertenecen a la curva y determinar si un punto pertenece o no a esa curva.
+*   **En la lógica proposicional:** Se identifican y nombran las proposiciones simples (t, w, p, q, r) que componen una proposición compuesta.
+*   **En la inclusión de conjuntos:** Se necesita determinar si un conjunto A está incluido en B pero son distintos (A ⊊B).
+
+**Cuándo hay que explicitarlas:**
+
+Se deben explicitar cuando se está trabajando con un problema que requiere un análisis formal, como en el caso de la ecuación canónica de una circunferencia o la lógica proposicional.  En estos casos, es necesario definir claramente las variables, los valores y las relaciones entre ellas para poder realizar los cálculos y llegar a una conclusión.  En el ejemplo de la inclusión de conjuntos, se nombran y definen las proposiciones componentes para poder analizar la estructura de la proposición compuesta.
+";Son las condiciones que deben cumplir las variables para que la expresión tenga sentido (divisor ≠ 0, radicando ≥ 0 en raíces de índice par). Deben escribirse en cada ejercicio, antes de operar (Números reales).;9;4;No;No;10
+P3;específica;¿En qué orden conviene escribir los valores de verdad al armar la tabla de dos proposiciones?;5.0;"T01. Lógica Proposicional.pdf p.5; T01. Lógica Proposicional.pdf p.15; T01. Lógica Proposicional.pdf p.19";"La forma más eficiente y clara de armar una tabla de verdad para dos proposiciones es seguir un orden sistemático. Aquí te presento el orden recomendado y la lógica detrás de él:
+
+**1. Escribe todas las combinaciones posibles de valores de verdad para las dos proposiciones.**
+
+   * **Proposición A:** Tiene dos posibles valores de verdad: Verdadero (V) o Falso (F).
+   * **Proposición B:** También tiene dos posibles valores de verdad: Verdadero (V) o Falso (F).
+
+   Esto significa que hay 2 * 2 = 4 combinaciones posibles.
+
+**2. Organiza las combinaciones en una tabla de 2x2.**
+
+   | A     | B     |
+   |-------|-------|
+   | V     | V     |
+   | V     | F     |
+   | F     | V     |
+   | F     | F     |
+
+**3. Asigna los valores de verdad a cada celda de la tabla.**
+
+   *  Comienza en la esquina superior izquierda (celda 1) y llena la tabla fila por fila, columna por columna.
+   *  Asigna el valor de verdad (V o F) de la proposición A a la columna correspondiente.
+   *  Asigna el valor de verdad (V o F) de la proposición B a la fila correspondiente.
+
+**Por qué este orden es el mejor:**
+
+* **Sistemático:**  Asegura que todas las combinaciones posibles se consideren.
+* **Claro:** Facilita la visualización de la relación entre las proposiciones y sus valores de verdad.
+* **Evita errores:**  Al seguir un orden predefinido, reduces la posibilidad de olvidar alguna combinación o asignar valores de verdad incorrectamente.
+
+**Ejemplo:**
+
+Para la tabla anterior, cada celda ya tiene asignado el valor de verdad correspondiente a las proposiciones A y B.  No hay un orden específico para *escribir* los valores dentro de cada celda, ya que ya están predeterminados por la combinación de filas y columnas.
+
+**En resumen, el orden clave es primero listar todas las combinaciones posibles y luego organizarlas en una tabla de 2x2, asignando los valores de verdad de manera sistemática.**";"Al armar la tabla de verdad de dos proposiciones, conviene escribir los valores de verdad en las columnas de ambas proposiciones, **simétricamente**. Esto significa que la primera columna será para la proposición 1, la segunda columna para la proposición 2, y así sucesivamente.  
+
+Esto permite que al evaluar cada combinación de valores de verdad (las filas de la tabla), puedas ver directamente el valor de verdad de la proposición compuesta (el resultado de la operación lógica que las conecta) para cada posible combinación.";Para la primera proposición: V, V, F, F. Para la segunda: alternar V y F empezando por V (Lógica, sección 3.2).;8;10;No;No;10
+P4;específica;¿Qué diferencia hay entre el conjunto vacío y el conjunto que tiene como único elemento al vacío? ¿Qué analogía usa el apunte?;1.0;"T02. Conjuntos.pdf p.13; T09. Funciones.pdf p.3; T02. Conjuntos.pdf p.3";"¡Excelente pregunta! La diferencia entre el conjunto vacío y el conjunto que tiene como único elemento al vacío puede ser sutil, pero es importante.
+
+**1. El Conjunto Vacío (∅ o {})**
+
+*   El conjunto vacío es un conjunto que **no contiene ningún elemento**. Es decir, es un conjunto que está ""vacío"" de elementos.
+*   Es un conjunto bien definido, lo que significa que tiene una regla clara que determina qué elementos pertenecen a él (en este caso, ninguna).
+*   Es un conjunto fundamental en la teoría de conjuntos y se utiliza como base para muchas definiciones y demostraciones.
+
+**2. El Conjunto que Tiene como Único Elemento al Vacío ({∅})**
+
+*   Este conjunto contiene **solo un elemento**, y ese elemento es el conjunto vacío en sí mismo.
+*   Es un conjunto que es un poco más ""complejo"" porque contiene un conjunto como elemento.
+*   Aunque es válido, este conjunto es menos común y a menudo se considera una construcción más artificial.
+
+**En resumen:**
+
+| Característica       | Conjunto Vacío (∅) | Conjunto con {∅} |
+| --------------------- | ------------------ | ---------------- |
+| Elementos             | Ninguno            | Uno (el conjunto vacío) |
+| Naturaleza            | Fundamental        | Más complejo     |
+| Uso común             | Muy frecuente      | Menos frecuente  |
+
+
+**Analogía del Apunte:**
+
+El apunte, que es un cuaderno de apuntes, utiliza una analogía muy útil para entender esta diferencia.  El apunte dice algo así:
+
+""**El conjunto vacío es como un cuaderno de apuntes que no tiene ninguna página.**  Es un cuaderno que no contiene nada.  El conjunto que tiene como único elemento al vacío es como un cuaderno de apuntes que tiene una sola página, y esa página es un cuaderno de apuntes que no tiene ninguna página.""
+
+La analogía destaca que ambos representan la ausencia de contenido, pero el segundo (con {∅}) introduce una capa adicional de ""contenedores"" vacíos.
+
+**En esencia, el conjunto vacío es la ausencia de elementos, mientras que el conjunto con {∅} es la ausencia de elementos dentro de un contenedor que también es la ausencia de elementos.**
+
+Espero que esta explicación y la analogía del apunte te ayuden a comprender mejor la diferencia. ¡No dudes en preguntar si tienes más dudas!";"Según el apunte, la diferencia entre el conjunto vacío (∅) y el conjunto que tiene como único elemento al vacío ({∅}) radica en que el primero es un conjunto que no contiene ningún elemento, mientras que el segundo contiene un solo elemento, que es precisamente el conjunto vacío.
+
+La analogía que utiliza el apunte para ilustrar esta diferencia es la de una compra de supermercado:
+
+*   **Conjunto vacío (∅):**  Sería como llevar un carrito vacío a la caja. No hay nada en el carrito, por lo tanto, no hay elementos en el conjunto.
+*   **Conjunto con {∅} como elemento:** Sería como llevar un paquete vacío a la caja. El paquete en sí mismo es el elemento del conjunto, y ese elemento es el conjunto vacío.
+
+En resumen, el apunte busca hacer la idea más tangible y comprensible a través de una situación cotidiana.";"∅ no tiene elementos; {∅} tiene un elemento. Analogía: una bolsa vacía frente a una bolsa con otra bolsa vacía adentro (Conjuntos).";8;10;no;no;10
+P5;específica;¿Cómo se construye la tabla de seno, coseno y tangente de los ángulos especiales sin memorizarla?;2.0;"T11. Trigonometría.pdf p.9; T11. Trigonometría.pdf p.18; T11. Trigonometría.pdf p.25";"Construir la tabla de seno, coseno y tangente de los ángulos especiales sin memorizarla es un ejercicio de comprensión y manipulación de relaciones trigonométricas. Aquí te explico el proceso paso a paso:
+
+**1. Entendiendo las Relaciones Trigonométricas Básicas:**
+
+* **Triángulo Rectángulo y Ángulos Especiales:**  Comienza con un triángulo rectángulo. Los ángulos especiales que te interesan son 30°, 45° y 60°.  En estos triángulos, las razones de los lados (catetos y hipotenusa) se convierten en las funciones trigonométricas.
+* **Definiciones:**
+    * **Seno (sin θ):** Cateto opuesto / Hipotenusa
+    * **Coseno (cos θ):** Cateto adyacente / Hipotenusa
+    * **Tangente (tan θ):** Cateto opuesto / Cateto adyacente
+
+**2. Construyendo los Triángulos Rectángulos Especiales:**
+
+* **30° - 60° - 90°:**
+    * **30°:**  El ángulo de 30° es el ángulo agudo.  El lado opuesto al ángulo de 30° es la base (l = 1).  El lado adyacente al ángulo de 30° es la altura (w = √3).  La hipotenusa es 2.
+    * **60°:**  El ángulo de 60° es el ángulo agudo.  El lado opuesto al ángulo de 60° es la altura (w = √3).  El lado adyacente al ángulo de 60° es la base (l = 1).  La hipotenusa es 2.
+* **45° - 45° - 90°:**
+    * **45°:**  Este es un triángulo isósceles.  Los dos catetos son iguales (l = w).  La hipotenusa es √2.  Puedes usar el teorema de Pitágoras (a² + b² = c²) para encontrar la hipotenusa:  1² + 1² = √2.
+* **60° - 60° - 90°:**
+    * **60°:**  Similar al triángulo de 30° - 60° - 90°, pero con los lados invertidos.
+
+**3. Calculando los Valores Trigonométricos:**
+
+Ahora que tienes los triángulos especiales, puedes calcular los valores de seno, coseno y tangente para cada ángulo:
+
+* **30°:**
+    * sin(30°) = 1/2
+    * cos(30°) = √3/2
+    * tan(30°) = 1/√3 = √3/3
+* **45°:**
+    * sin(45°) = 1/√2 = √2/2
+    * cos(45°) = 1/√2 = √2/2
+    * tan(45°) = 1
+* **60°:**
+    * sin(60°) = √3/2
+    * cos(60°) = 1/2
+    * tan(60°) = √3
+
+**4.  Extrapolando y Generalizando (Sin Memorizar):**
+
+* **La clave está en las relaciones de los lados:**  En lugar de memorizar los valores, comprende cómo se relacionan.  Por ejemplo, en un triángulo 30-60-90, el lado más corto (opuesto al 30°) es 1, el lado más largo (opuesto al 60°) es √3, y la hipotenusa es 2.
+* **Usa el Teorema de Pitágoras:**  a² + b² = c²  Siempre que tengas un triángulo rectángulo, puedes usar esta ecuación para encontrar las longitudes de los lados.
+* **Manipula las Razones:**  Puedes usar las definiciones de seno, coseno y tangente para encontrar otros valores.  Por ejemplo, si conoces la longitud de un lado y el ángulo, puedes calcular la longitud de otro lado y luego usar las definiciones para encontrar las razones trigonométricas.
+
+**Ejemplo de cómo construir la tabla:**
+
+| Ángulo (θ) | Cateto Opuesto (a) | Cateto Adyacente (b) | Hipotenusa (c) | sin(θ) | cos(θ) | tan(θ) |
+|---|---|---|---|---|---|---|
+| 30° | 1 | √3 | 2 | 1/2 | √3/2 | √3/3 |
+| 45° | 1 | 1 | √2 | √2/2 | √2/2 | 1 |
+| 60° | √3 | 1 | 2 | √3/2 | 1/2 | √3 |
+
+**En resumen:**  En lugar de memorizar los valores, construye la tabla a partir de los triángulos especiales, calcula los valores usando las definiciones trigonométricas y el teorema de Pitágoras, y comprende las relaciones entre los lados y las funciones trigonométricas.  Esto te permitirá construir la tabla y calcular valores para cualquier ángulo especial.";"La tabla de seno, coseno y tangente de los ángulos especiales se construye siguiendo estos pasos:
+
+1.  **Ubicación de los ángulos:** Se ubican los ángulos especiales (0, π/6, π/4, π/3, π/2, etc.) en una circunferencia trigonométrica.
+
+2.  **Columna del seno:** Se escribe los enteros del 0 al 4 en la columna del seno.
+
+3.  **Raíz cuadrada:** Se calcula la raíz cuadrada de cada uno de los enteros en la columna del seno.
+
+4.  **División por 2:** Se divide la raíz cuadrada obtenida por 2.  El resultado es el seno del ángulo correspondiente.
+
+5.  **Columna del coseno:** Se copia la columna del seno en orden contrario.  Esto se debe a que los ángulos son complementarios (por ejemplo, π/6 y 5π/6 son complementarios).
+
+6.  **Columna de la tangente:** Se calcula la tangente de cada ángulo (seno dividido por coseno) y se escribe el resultado en la columna de la tangente.
+
+En esencia, la tabla se construye utilizando la relación entre los ángulos y sus funciones trigonométricas, evitando la necesidad de memorizar los valores directamente.";"En la fila del seno se escriben 0, 1, 2, 3, 4, se toma la raíz cuadrada y se divide por 2; el coseno es la misma fila en orden inverso y la tangente es seno/coseno (Trigonometría, 5.1).";6;10;no;no;10
+P6;específica;¿Cuáles son los pasos de una demostración por inducción según el apunte?;5.0;"T04. Demostraciones.pdf p.2; T04. Demostraciones.pdf p.3; T04. Demostraciones.pdf p.10";"De acuerdo con el apunte, los pasos para una demostración por inducción son los siguientes:
+
+1. **Caso Base (o Caso Base):**
+   * Se demuestra que la proposición es verdadera para el primer valor del índice (generalmente n=0 o n=1).  Este es el punto de partida de la demostración.  Debes establecer que la afirmación es verdadera para un valor específico y pequeño.
+
+2. **Hipótesis Inductiva:**
+   * Se asume que la proposición es verdadera para un valor arbitrario de n, llamado 'k'.  Formalmente, se escribe: ""Supongamos que P(k) es verdadero"".  Esta es la suposición clave que usarás para avanzar en la demostración.
+
+3. **Paso Inductivo:**
+   * Se demuestra que, *si* la proposición es verdadera para 'k' (es decir, si P(k) es verdadero), *entonces* también es verdadera para 'k+1'.  En otras palabras, debes demostrar que P(k+1) es verdadero.  Este paso es crucial porque conecta el caso base con el siguiente valor del índice.  Este paso es donde se utiliza la hipótesis inductiva.
+
+**En resumen:**
+
+* **Caso Base:** Demuestra que la proposición es verdadera para n=0 o n=1.
+* **Hipótesis Inductiva:** Asume que la proposición es verdadera para n=k.
+* **Paso Inductivo:** Demuestra que si la proposición es verdadera para n=k, entonces también es verdadera para n=k+1.
+
+**Importante:**  Si puedes completar estos tres pasos, has demostrado la proposición por inducción matemática.
+
+---
+
+**¿Necesitas que te explique algún paso con más detalle o que te dé un ejemplo?**  Por ejemplo, puedo explicar cómo se usa la hipótesis inductiva en el paso inductivo, o puedo dar un ejemplo de una demostración por inducción.";"Según el apunte, los pasos de una demostración por inducción matemática son:
+
+1.  **Paso 1: Caso Base (∗1):** Demostrar que la propiedad se verifica para el primer elemento (generalmente, el 0 o el 1) del conjunto dado.
+2.  **Paso 2: Hipótesis Inductiva (H.I.):** Suponer que la propiedad se verifica para un elemento h cualquiera en el conjunto dado.
+3.  **Paso 3: Paso Inductivo (T.I.):** Utilizando la hipótesis inductiva, demostrar que la propiedad también se verifica para el siguiente elemento (h + 1).  Es decir, demostrar que si la propiedad se cumple para h, entonces se cumple para h+1.
+
+En resumen, se parte de un caso base para establecer la verdad, se asume la verdad para un elemento y se demuestra que esa verdad se extiende al siguiente.";1) Caso base: probar p(a). 2) Hipótesis inductiva: suponer p(h) verdadera. 3) Paso inductivo (tesis inductiva): probar p(h+1) usando la HI (Demostraciones, sección 5).;10;10;No;No;10
+P7;específica;¿En qué caso se puede usar la regla de Ruffini y qué devuelve?;2.0;"T06. Expresiones Algebraicas Polinómicas.pdf p.25; T06. Expresiones Algebraicas Polinómicas.pdf p.20; T06. Expresiones Algebraicas Polinómicas.pdf p.21";"La regla de Ruffini (también conocida como división sintética) es una forma abreviada de realizar la división de un polinomio por un binomio de la forma (x - a).  Aquí te explico cuándo se usa y qué devuelve:
+
+**Cuándo se usa la regla de Ruffini:**
+
+La regla de Ruffini se utiliza para dividir un polinomio de grado *n* por un binomio de la forma (x - a), donde *n* es el grado del polinomio.  En otras palabras, se usa cuando conoces una raíz del binomio (el valor de 'a' que hace que el binomio sea cero) y quieres encontrar los otros coeficientes del cociente y el resto.
+
+**¿Qué devuelve?**
+
+La regla de Ruffini devuelve dos cosas:
+
+1. **El cociente:**  Es un polinomio de grado *n-1* (uno menos que el grado del polinomio original) que representa la división del polinomio original entre (x - a).
+
+2. **El resto:** Es un número que representa el valor del polinomio original evaluado en 'a'.  En otras palabras, es el valor del polinomio cuando x = a.  El resto es crucial porque si el resto es cero, entonces 'a' es una raíz del polinomio original, y (x - a) es un factor del polinomio.
+
+**Cómo funciona la regla de Ruffini (ejemplo):**
+
+Supongamos que queremos dividir el polinomio  P(x) = x³ - 6x² + 11x - 6  por el binomio (x - 1).
+
+La regla de Ruffini se ve así:
+
+```
+1 |  1  -6   11  -6
+  |      1  -5   6
+  ------------------
+     1  -5   6   0
+```
+
+* **El primer número (1) en la fila superior** es el coeficiente principal del polinomio P(x).
+* **El segundo número (-6) en la fila superior** es el coeficiente del término x².
+* **Y así sucesivamente...**
+
+**Interpretación de los resultados:**
+
+* **La primera fila (1 -6 11 -6)** es la misma que el polinomio P(x) = x³ - 6x² + 11x - 6.
+* **La segunda fila (-5 6)**  es el resultado de realizar operaciones aritméticas (multiplicación y suma) en la primera fila, utilizando el valor de 'a' (en este caso, 'a' = 1).
+* **La tercera fila (1 -5 6 0)**  es el cociente y el resto.  En este caso:
+    * **Cociente:**  x² - 5x + 6
+    * **Resto:** 0
+
+Esto significa que:  x³ - 6x² + 11x - 6 = (x - 1)(x² - 5x + 6)
+
+**En resumen:** La regla de Ruffini es una herramienta eficiente para dividir polinomios cuando conoces una raíz del divisor.  Devuelve el cociente y el resto de la división.
+
+**Recursos adicionales:**
+
+* **Video explicativo:** [https://m.youtube.com/watch?v=9j-9j-9j-9j](https://m.youtube.com/watch?v=9j-9j-9j-9j)
+* **Calculadora de Ruffini online:** [https://www.symbolab.com/solver/ruffini-algorithm-calculator](https://www.symbolab.com/solver/ruffini-algorithm-calculator)
+
+Espero que esta explicación te sea útil.  ¡No dudes en preguntar si tienes más dudas!";"La regla de Ruffini se utiliza para dividir un polinomio de grado 2 (un polinomio cuadrático) entre un binomio de la forma (x - a). 
+
+**¿Qué devuelve?**
+
+La regla de Ruffini devuelve un cociente (un polinomio de grado 1, también llamado lineal) y un resto.  La división se expresa así:
+
+P(x) = (x - a) * Q(x) + R
+
+Donde:
+
+*   P(x) es el polinomio original de grado 2.
+*   (x - a) es el binomio divisor.
+*   Q(x) es el cociente (un polinomio lineal).
+*   R es el resto (un número).
+
+En resumen, la regla de Ruffini permite realizar la división de un polinomio cuadrático por un binomio de la forma (x - a) de manera eficiente, obteniendo el cociente y el resto.";Cuando el divisor es de la forma (x − a), con a complejo. Da los coeficientes del cociente y el resto, que por el teorema del resto vale P(a) (Expresiones algebraicas polinómicas, 5.2).;8;10;No;No;10
+P8;específica;¿Cómo se clasifican los sistemas de ecuaciones lineales según su conjunto solución?;;"T13. Sistemas (1C 2026).pdf p.2; T07. Exp Alg no polinómicas. Ecuaciones e Inecuaciones.pdf p.6; T13. Sistemas (1C 2026).pdf p.7";"Los sistemas de ecuaciones lineales se clasifican según su conjunto solución de las siguientes maneras:
+
+**1. Según el número de soluciones:**
+
+* **Sistema con una única solución (o sistema consistente determinado):**  El gráfico de las ecuaciones representa una línea recta única.  Esto significa que hay un punto de intersección único que satisface ambas ecuaciones.  Se puede expresar como una única solución en forma de coordenadas (x, y).
+
+* **Sistema con infinitas soluciones (o sistema consistente indeterminado):** El gráfico de las ecuaciones representa una familia de líneas rectas que son todas equivalentes.  Esto significa que hay un número infinito de pares de valores (x, y) que satisfacen ambas ecuaciones.  Se expresa como una solución en forma de parámetros (x, y = f(t)).  En este caso, las ecuaciones son *dependientes*.
+
+* **Sistema sin solución (o sistema inconsistente):** El gráfico de las ecuaciones representa dos o más líneas rectas que nunca se cruzan.  Esto significa que no hay ningún valor de x e y que satisfaga ambas ecuaciones simultáneamente.  Se puede expresar como ""no hay solución"".
+
+
+**2. Según la naturaleza de las ecuaciones:**
+
+* **Sistema consistente y determinado:**  Ambas ecuaciones representan la misma línea recta.  Esto significa que tienen la misma pendiente y el mismo punto de intersección.  La solución es una única solución.
+
+* **Sistema consistente e indeterminado:**  Las ecuaciones representan la misma línea recta, pero una de ellas es un múltiplo del otro.  Esto significa que una ecuación puede ser obtenida de la otra mediante una operación algebraica (como suma o resta).  La solución es una familia de soluciones.
+
+* **Sistema inconsistente:**  Las ecuaciones representan líneas rectas paralelas.  Esto significa que tienen la misma pendiente pero diferentes puntos de intersección.  No hay solución.
+
+**Resumen en una tabla:**
+
+| Característica          | Sistema Consistente Determinado | Sistema Consistente Indeterminado | Sistema Inconsistente |
+|--------------------------|---------------------------------|------------------------------------|-----------------------|
+| **Número de soluciones** | 1                               | Infinitas                          | 0                     |
+| **Gráfica**              | Línea recta única                | Familia de líneas rectas paralelas | Líneas rectas paralelas |
+| **Ecuaciones**           | Dependientes                     | Dependientes                        | Independientes        |
+| **Conjunto solución**     | (x, y)                            | (x, y = f(t))                      | No hay solución       |
+
+
+
+**Ejemplo:**
+
+* **Sistema Consistente Determinado:**
+   *  x + y = 5
+   *  2x + 2y = 10
+   La segunda ecuación es simplemente el doble de la primera.  La solución es x = 5, y = 0.
+
+* **Sistema Consistente Indeterminado:**
+   *  x + y = 3
+   *  2x + 2y = 6
+   Ambas ecuaciones representan la misma línea recta.  La solución es x = t, y = 3 - t, donde 't' es cualquier número real.
+
+* **Sistema Inconsistente:**
+   *  x + y = 1
+   *  x + y = 2
+   Las líneas son paralelas y nunca se cruzan.  No hay solución.
+
+Espero que esta explicación detallada te sea útil.  ¿Tienes alguna otra pregunta o quieres que te explique algún aspecto con más detalle?";"Los sistemas de ecuaciones lineales se clasifican según su conjunto solución de la siguiente manera:
+
+*   **Sistema Compatible y Exactamente Soluble:** El sistema tiene una única solución.
+*   **Sistema Compatible y con Infinitas Soluciones:** El sistema tiene un número infinito de soluciones. Esto ocurre cuando las ecuaciones son dependientes linealmente (es decir, una ecuación puede ser obtenida de la otra multiplicando una de ellas por una constante).
+*   **Sistema Incompatible:** El sistema no tiene solución. Esto ocurre cuando las ecuaciones son inconsistentes (es decir, no pueden ser satisfejidas simultáneamente).";Incompatible (sin solución), compatible determinado (solución única) y compatible indeterminado (infinitas soluciones).;7;10;No;No;10
+P9;general;¿Qué es un número complejo?;6.0;"T05. Números Complejos.pdf p.2; T05. Números Complejos.pdf p.6; T05. Números Complejos.pdf p.7";"Un número complejo es una extensión del concepto de número real que permite trabajar con raíces cuadradas de números negativos.  Aquí te lo explico de forma detallada:
+
+**1. Origen del Concepto:**
+
+* **Problema de la raíz cuadrada de -1:**  En los números reales, no existe un número que, multiplicado por sí mismo, dé como resultado un número negativo.  Por ejemplo, 2 * 2 = 4, pero (-2) * (-2) = 4.  Esto crea un problema cuando intentamos encontrar la raíz cuadrada de números negativos.
+* **Necesidad de una Extensión:**  Matemáticos del siglo XIX, como Carl Friedrich Gauss, reconocieron la necesidad de extender el sistema numérico para resolver problemas en áreas como la física y la ingeniería.
+
+**2. Definición:**
+
+Un número complejo se define como un número que tiene la forma:
+
+**z = a + bi**
+
+Donde:
+
+* **a** y **b** son números reales.
+* **i** es la **unidad imaginaria**, definida como la raíz cuadrada de -1:  **i = √(-1)**.  Es decir,  i² = -1.
+
+* **a** se llama la **parte real** del número complejo z.
+* **b** se llama la **parte imaginaria** del número complejo z.
+
+**3. Ejemplos:**
+
+* **3 + 2i:**  Aquí, a = 3 y b = 2.  Es un número complejo con parte real 3 y parte imaginaria 2.
+* **-1 - i:** Aquí, a = -1 y b = -1. Es un número complejo con parte real -1 y parte imaginaria -1.
+* **5i:**  Aquí, a = 0 y b = 5.  Es un número complejo donde la parte real es 0 (y se le llama un número imaginario puro).
+* **7:**  Aquí, a = 7 y b = 0.  Es un número real, que también es un número complejo (ya que se puede escribir como 7 + 0i).
+
+**4. Representación Gráfica:**
+
+Los números complejos se pueden representar en un plano llamado **plano complejo** o **plano de Argand:**
+
+* El eje horizontal (eje x) representa la parte real (a).
+* El eje vertical (eje y) representa la parte imaginaria (b).
+* Cada número complejo z = a + bi se representa como un punto en este plano con coordenadas (a, b).
+
+**5. Operaciones con Números Complejos:**
+
+Se pueden realizar operaciones aritméticas con números complejos, como suma, resta, multiplicación y división, siguiendo reglas específicas que involucran la unidad imaginaria 'i'.
+
+* **Suma:** (a + bi) + (c + di) = (a + c) + (b + d)i
+* **Resta:** (a + bi) - (c + di) = (a - c) + (b - d)i
+* **Multiplicación:** (a + bi) * (c + di) = (ac - bd) + (ad + bc)i
+* **División:**  Se multiplica el numerador y el denominador por el conjugado del denominador.
+
+**En resumen, un número complejo es una extensión del sistema numérico real que permite trabajar con raíces cuadradas de números negativos, utilizando la unidad imaginaria 'i' para representar estas raíces.**
+
+¿Te gustaría que profundizáramos en algún aspecto específico, como:
+
+*   Las operaciones con números complejos?
+*   La representación gráfica en el plano complejo?
+*   Las aplicaciones de los números complejos en diferentes campos (física, ingeniería, etc.)?";"Según los documentos proporcionados, un número complejo (z) se define como un par ordenado de números reales: **z = (a; b), donde a ∈R ∧ b ∈R**.  Esto significa que un número complejo se representa mediante una coordenada real (a) y otra coordenada real (b), y se anota como (Re(z); Im(z)), donde Re(z) es la componente real y Im(z) es la componente imaginaria.  En esencia, los números complejos son una extensión de los números reales utilizando la unidad imaginaria ""i"", aunque en esta definición, la unidad imaginaria no se menciona explícitamente, sino que se representa a través de la segunda componente del par ordenado.
+";"Un par ordenado (a; b) de números reales, con parte real a y parte imaginaria b; en forma binómica a + bi, con i² = −1.";7;10;No;No;10
+P10;general;¿Qué condición debe cumplir una función para tener función inversa?;2.0;"T09. Funciones.pdf p.63; T11. Trigonometría.pdf p.44; T09. Funciones.pdf p.63";"Una función debe cumplir ciertas condiciones para tener una función inversa. Aquí te las detallo:
+
+**1. Debe ser una función de una sola variable:**
+
+*   La función inversa solo puede existir si la función original es de una sola variable (por ejemplo, f(x) = x + 2).  Si la función es de varias variables (por ejemplo, f(x, y) = x² + y), no puede tener una inversa que sea una función de una sola variable.
+
+**2. Debe ser biyectiva (uno a uno y sobre):**
+
+*   Esto significa que la función debe cumplir dos condiciones:
+
+    *   **Inyectiva (Uno a uno):**  Cada elemento del dominio (la entrada de la función) debe corresponder a un único elemento del rango (la salida de la función).  En otras palabras, si f(x₁) = f(x₂), entonces x₁ = x₂.  Esto asegura que no haya valores diferentes en el dominio que produzcan el mismo valor en el rango.
+
+    *   **Sobre:**  Cada elemento del rango debe corresponder a al menos un elemento del dominio.  Es decir, el rango debe tener la misma cardinalidad que el dominio.
+
+**En resumen, una función para tener una función inversa debe ser una función de una sola variable que sea tanto inyectiva como sobre.**
+
+**Cómo encontrar la función inversa:**
+
+Si una función f(x) cumple estas condiciones, la función inversa se denota como f⁻¹(y) y se encuentra de la siguiente manera:
+
+1.  Reescribe la función como y = f(x).
+2.  Resuelve la ecuación para x en términos de y.  Esto te dará x = g(y), donde g(y) es la función inversa.
+3.  Intercambia x e y:  f⁻¹(y) = g(y).
+
+**Ejemplo:**
+
+Considera la función f(x) = 2x + 1.
+
+1.  y = 2x + 1
+2.  Resuelve para x:  y - 1 = 2x  =>  x = (y - 1) / 2
+3.  Intercambia x e y:  f⁻¹(y) = (y - 1) / 2
+
+**Importante:**  No todas las funciones tienen una función inversa.  Solo las funciones biyectivas lo tienen.  Si una función no es biyectiva, no se puede encontrar una función inversa que sea también una función biyectiva.
+
+Espero que esta explicación sea clara.  Si tienes alguna otra pregunta, no dudes en preguntar.";"Según el texto proporcionado, una función debe ser biyectiva para tener una función inversa. Esto significa que la función debe ser tanto inyectiva (cada elemento del dominio corresponde a un único elemento del rango) como sobreyectiva (cada elemento del rango corresponde a al menos un elemento del dominio).
+
+Además, el texto detalla las propiedades de la función inversa:
+
+*   (f⁻¹ ◦ f)(x) = x para todo x ∈ A
+*   (f ◦ f⁻¹) (y) = y para todo y ∈ B
+*   Dom(f⁻¹) = Im(f) y Im(f⁻¹) = Dom(f)
+
+En resumen, la clave para tener una función inversa es que la función original sea biyectiva.
+";"Debe ser biyectiva (inyectiva y sobreyectiva); si no lo es, se puede restringir dominio y codominio (Funciones, sección 5).";7;10;No;No;10
+P11;fuera de corpus;¿Cómo se calcula la derivada de un producto de funciones?;;"T09. Funciones.pdf p.65; T09. Funciones.pdf p.61; T05. Números Complejos.pdf p.6";"La derivada de un producto de funciones se calcula utilizando la **regla del producto** en cálculo. Esta regla establece que la derivada de un producto de dos funciones, *u(x)* y *v(x)*, es:
+
+**d/dx [u(x) * v(x)] = u'(x) * v(x) + u(x) * v'(x)**
+
+En palabras:
+
+* **u'(x) * v(x)**:  La derivada de la primera función *u(x)* multiplicada por la segunda función *v(x)*.
+* **u(x) * v'(x)**: La primera función *u(x)* multiplicada por la derivada de la segunda función *v'(x)*.
+
+**Explicación más detallada y ejemplos:**
+
+**1. Caso General (Más de dos funciones):**
+
+Si tienes un producto de más de dos funciones, puedes aplicar la regla del producto repetidamente.  Por ejemplo, si tienes:
+
+d/dx [u(x) * v(x) * w(x)] =  [u'(x) * v(x) + u(x) * v'(x)] * w(x) + u(x) * [v'(x) * w(x) + v(x) * w'(x)]
+
+**2. Ejemplos:**
+
+* **Ejemplo 1:**  d/dx [x² * sin(x)]
+
+   * u(x) = x²  =>  u'(x) = 2x
+   * v(x) = sin(x) => v'(x) = cos(x)
+
+   Aplicando la regla del producto:
+   d/dx [x² * sin(x)] = (2x) * sin(x) + x² * cos(x)
+
+* **Ejemplo 2:** d/dx [t³ * e^t]
+
+   * u(t) = t³  =>  u'(t) = 3t²
+   * v(t) = e^t  =>  v'(t) = e^t
+
+   Aplicando la regla del producto:
+   d/dx [t³ * e^t] = (3t²) * e^t + t³ * e^t
+
+* **Ejemplo 3:** d/dx [f(x) * g(x) * h(x)]
+
+   * d/dx [f(x) * g(x) * h(x)] = f'(x) * g(x) * h(x) + f(x) * [g'(x) * h(x) + g(x) * h'(x)] + f(x) * g(x) * h'(x)
+
+**Puntos Clave:**
+
+* **Identifica u(x) y v(x):**  Primero, identifica las dos funciones que están siendo multiplicadas.
+* **Calcula las derivadas:** Calcula la derivada de u(x) (u'(x)) y la derivada de v(x) (v'(x)).
+* **Aplica la regla:**  Sustituye las derivadas en la fórmula:  u'(x) * v(x) + u(x) * v'(x)
+
+**En resumen, la regla del producto es una herramienta fundamental en cálculo para encontrar la derivada de productos de funciones.  Recuerda que la clave está en identificar las funciones y sus derivadas correctamente.**";"La derivada de un producto de funciones se calcula utilizando la **regla del producto** del cálculo diferencial.  Esta regla establece que la derivada de un producto de dos funciones, *f(x)* y *g(x)*, es:
+
+**d/dx [f(x)g(x)] = f'(x)g(x) + f(x)g'(x)**
+
+En palabras:
+
+*   **f'(x)g(x)**:  La derivada de la primera función multiplicada por la segunda función.
+*   **f(x)g'(x)**:  La primera función multiplicada por la derivada de la segunda función.
+
+**Ejemplo:**
+
+Si tenemos  *y = (x² + 1)(3x - 2)*,  para encontrar *dy/dx*, aplicamos la regla del producto:
+
+1.  **f(x) = x² + 1**  =>  *f'(x) = 2x*
+2.  **g(x) = 3x - 2**  =>  *g'(x) = 3*
+
+Entonces:
+
+*dy/dx = (2x)(3x - 2) + (x² + 1)(3)*
+*dy/dx = 6x² - 4x + 3x² + 3*
+*dy/dx = 9x² - 4x + 3*
+
+Por lo tanto, la derivada de *y* con respecto a *x* es *9x² - 4x + 3*.
+
+**En resumen, la regla del producto es fundamental para encontrar la derivada de funciones que están multiplicadas entre sí.**";El tema no está en los apuntes. Respuesta esperada CON RAG: indicar que el contexto no alcanza.;8;0;No;Si;10
