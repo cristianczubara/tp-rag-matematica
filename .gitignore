@@ -1,0 +1,14 @@
+# Bases vectoriales (se regeneran al correr el notebook o el script)
+chroma_tp/
+chroma_pdf_v2/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Sistema
+.DS_Store
+Thumbs.db
