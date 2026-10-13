@@ -118,15 +118,25 @@ python rag_pdf_entrega_tp.py --reindex    # reconstruye el índice
 
 ## 6. Ejemplos de uso
 
-<!-- Pegar aquí dos o tres pares pregunta/respuesta reales de resultados/evaluacion_respuestas.csv -->
+### Ejemplo 1: pregunta específica del apunte (P3)
 
-**Pregunta:** ¿Qué diferencia hay entre el conjunto vacío y el conjunto que tiene como único elemento al vacío? ¿Qué analogía usa el apunte?
+**Pregunta:** ¿En qué orden conviene escribir los valores de verdad al armar la tabla de dos proposiciones?
 
-**Fragmentos recuperados:** `T02. Conjuntos.pdf` (págs. __), ...
+**Fragmentos recuperados:** `T01. Lógica Proposicional.pdf` (pág. 7), entre otros.
 
-**Respuesta CON RAG:** _(completar)_
+**SIN RAG:**
+> (pegar acá la respuesta sin RAG)
 
-**Respuesta SIN RAG:** _(completar)_
+**CON RAG:**
+> (pegar acá la respuesta con RAG)
+
+**Comentario:** sin RAG, el modelo [resumí en una frase]. Con RAG reproduce la convención del apunte: V-V-F-F para la primera proposición y alternar V-F para la segunda.
+
+### Ejemplo 2: pregunta fuera del corpus (P11)
+
+**Pregunta:** ¿Cómo se calcula la derivada de un producto de funciones?
+
+Las dos versiones respondieron con la regla del producto, (f·g)' = f'·g + f·g', y un ejemplo resuelto. La versión CON RAG **no advirtió que el tema no está en los apuntes** y no citó ninguna fuente, a pesar de que el prompt le pedía hacerlo. Ver la sección 8.
 
 ---
 
@@ -145,24 +155,27 @@ Se usaron 11 preguntas de tres tipos:
 Se evalúan por separado las dos etapas del pipeline.
 
 - **Recuperación (automática).** Para cada pregunta se definió una frase de *evidencia* que solo aparece en el fragmento que la responde. Se registra la posición del primer chunk recuperado que la contiene y se calculan **hit@k** (proporción de preguntas con la evidencia entre los primeros *k*) y **MRR** (promedio de 1/posición).
-- **Generación (manual).** Cada respuesta se corrige contra la referencia del apunte: nota 0 / 0.5 / 1, presencia de alucinaciones y, en las respuestas CON RAG, si cita la fuente correcta.
+- **Generación (manual).** Cada respuesta se corrige contra la referencia del apunte: nota 0 a 10, presencia de alucinaciones y, en las respuestas CON RAG, si cita la fuente correcta.
 
 ### Resultados
 
-<!-- Completar con la salida de las celdas 7.3 y 8 del notebook -->
+Notas en escala de 0 a 10, corregidas a mano contra el apunte.
 
 | Métrica | SIN RAG | CON RAG |
 |---|---|---|
-| Nota media, preguntas específicas | | |
-| Nota media, preguntas generales | | |
-| Alucinaciones (cantidad) | | |
-| Se abstiene en la pregunta fuera de corpus | | |
-| Cita fuente correcta | — | |
+| Nota media, preguntas específicas (8) | 7,75 | 9,25 |
+| Nota media, preguntas generales (2) | 7,00 | 10,00 |
+| Nota media sin la pregunta fuera de corpus (10) | 7,60 | 9,40 |
+| Se abstiene en la pregunta fuera de corpus | No | No |
+
+El detalle de alucinaciones y citas por pregunta está en `resultados/evaluacion_corregida.csv` y en el resumen de la sección 7.3 del notebook.
 
 | Recuperación | hit@1 | hit@3 | hit@5 | hit@10 | MRR |
 |---|---|---|---|---|---|
-| Sin prefijos (base) | | | | | |
-| Con prefijos `search_document:` / `search_query:` | | | | | |
+| Sin prefijos (base) | 0,1 | 0,5 | 0,7 | 0,9 | 0,35 |
+| Con prefijos `search_document:` / `search_query:` | 0,2 | 0,6 | 0,6 | 0,9 | 0,43 |
+
+**Lectura de los resultados.** El retriever encuentra el fragmento correcto en 9 de 10 preguntas, pero rara vez lo ubica primero; por eso se usa k = 10. El RAG mejora la nota media de 7,6 a 9,4 porque el modelo responde con las definiciones y convenciones del apunte en lugar de definiciones genéricas. Los prefijos de `nomic-embed-text` mejoran el orden de los resultados (MRR de 0,35 a 0,43), aunque con 10 preguntas la diferencia no es concluyente.
 
 ---
 
@@ -187,9 +200,11 @@ Se evalúan por separado las dos etapas del pipeline.
 5. **Re-ranking** con un *cross-encoder* sobre los top-20 antes de quedarse con los 5 mejores.
 6. **Citas exactas:** guardar el rango de páginas de cada chunk, no solo la inicial.
 7. **Evaluación automática:** un conjunto más grande de preguntas y métricas de fidelidad al contexto (por ejemplo, con RAGAS).
+8. **El modelo no siempre respeta el contexto.** En la pregunta fuera de corpus (derivadas), gemma3 respondió desde su conocimiento propio a pesar de la instrucción de abstenerse, sin citar fuentes ni advertir que el tema no estaba en los apuntes. Algo similar ocurrió en P8, donde respondió bien aunque el retriever no trajo el fragmento correcto. Mitigaciones posibles: un prompt de sistema más estricto, un umbral de distancia que evite llamar al LLM si no hay fragmentos cercanos, o un modelo más grande.
+9. **Retrieval débil en temas con mucha notación.** La pregunta sobre clasificación de sistemas lineales (P8) no recuperó el fragmento correcto ni con prefijos: el texto de matrices y sistemas se extrae desordenado y eso afecta su embedding.
 
 ---
 
 ## 9. Sobre los datos
 
-Los PDFs son material didáctico de la Secretaría de Admisión del ITBA. <!-- Aclarar aquí si se incluyen en el repositorio con autorización o si se incluye solo una muestra. -->
+Los PDFs de la carpeta `docs/` son los apuntes teóricos del Trayecto Matemática de la Secretaría de Admisión del ITBA y se incluyen con fines académicos para que el trabajo sea reproducible. El archivo *T12. Matrices y Sistemas* está en la carpeta pero no se indexa, porque duplica el contenido de *T12. Matrices 1C 2026* y *T13. Sistemas 1C 2026* (ver la variable `EXCLUIR_PDFS` del notebook).
