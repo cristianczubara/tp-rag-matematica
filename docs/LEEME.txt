@@ -1,0 +1,7 @@
+Poné acá tus archivos PDF (uno o varios).
+
+Al correr `python rag_pdf.py`, todos los .pdf de esta carpeta se indexan
+automaticamente en la base vectorial (ChromaDB) y despues se pueden consultar.
+
+Nota: los .pdf de esta carpeta NO se suben al repo (estan en .gitignore),
+asi no versionamos documentos que pueden ser pesados o privados.
