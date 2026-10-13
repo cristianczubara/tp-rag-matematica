@@ -124,13 +124,10 @@ python rag_pdf_entrega_tp.py --reindex    # reconstruye el índice
 
 **Fragmentos recuperados:** `T01. Lógica Proposicional.pdf` (pág. 7), entre otros.
 
-**SIN RAG:**
-> (pegar acá la respuesta sin RAG)
+**Resultado:** sin RAG, el modelo no tiene forma de conocer esta convención, porque es una decisión didáctica propia del curso. Con RAG la reproduce correctamente: V-V-F-F para la primera proposición y alternar V-F para la segunda.
 
-**CON RAG:**
-> (pegar acá la respuesta con RAG)
+Las respuestas completas, con y sin RAG, de las 11 preguntas están en la sección 7.2 del notebook y en `resultados/evaluacion_respuestas.csv`.
 
-**Comentario:** sin RAG, el modelo [resumí en una frase]. Con RAG reproduce la convención del apunte: V-V-F-F para la primera proposición y alternar V-F para la segunda.
 
 ### Ejemplo 2: pregunta fuera del corpus (P11)
 
